@@ -1,0 +1,2 @@
+,model,acc,auc,rec,prec,f-value,comment
+0,svm,0.6485,0.803,0.6469,0.6495,0.6477,"{'C': 54.04942954924472, 'decision_function_shape': 'ovo', 'gamma': 0.001, 'kernel': 'rbf'}"
