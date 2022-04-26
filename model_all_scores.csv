@@ -1,3 +1,10 @@
 ,model,acc,auc,rec,prec,f-value,comment
 0,svm,0.4419,0.645,0.4394,0.4415,0.44,untuned
 1,svm,0.6485,0.803,0.6469,0.6495,0.6477,"{'C': 54.04942954924472, 'decision_function_shape': 'ovo', 'gamma': 0.001, 'kernel': 'rbf'}"
+2,Untuned Decision Tree,0.5552,0.7104,0.5543,0.567,0.5582,randomly selected max_depth = 10
+3,Tuned Decision Tree,0.5796,0.7091,0.5772,0.5724,0.5722,tuned max depth of 12
+4,Random Forest,0.6557,0.8313,0.6539,0.6527,0.6509,"used max_depth of 12 from tuned decision tree, no need to tune n_estimators because it only gets better without risk of overfitting"
+5,Untuned Adaboost,0.5968,0.7387,0.5959,0.6012,0.5967,untuned
+6,Tuned Adaboost,0.6212,0.8012,0.6195,0.6203,0.6192,"best parameters: base_estimator__max_depth: 10, learning_rate: 1.0797751623277096, n_estimators: 50"
+7,Untuned Gradient Boosting Classifier,0.6327,0.8067,0.6311,0.6277,0.628,untuned
+8,Tuned Gradient Boosting Classifier,0.6514,0.8167,0.65,0.647,0.6467,"best parameters, pretty similar to the default/untuned one: learning_rate: 0.1778279410038923, n_estimators: 120"
